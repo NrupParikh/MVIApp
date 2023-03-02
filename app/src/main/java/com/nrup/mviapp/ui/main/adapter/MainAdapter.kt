@@ -33,6 +33,10 @@ class MainAdapter(
         }
     }
 
+    fun addData(list: List<User>) {
+        users.addAll(list)
+    }
+
     inner class MyDataViewHolder(val binding: ItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root)
 
